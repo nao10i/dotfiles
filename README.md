@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 Welcome to my dotfiles.
 
@@ -6,31 +6,33 @@ Welcome to my dotfiles.
 
 ## Installation
 
-```sh
-git clone https://github.com/nao10i/dotfiles
+```bash
+git clone https://github.com/nao10i/dotfiles.git
 cd dotfiles
-./install.sh all [apt|brew|snap|pkg]
+
+# To install all components using your preferred package manager, run:
+# ./install.sh all [apt|brew|snap|pkg]
+
+# Replace [apt|brew|snap|pkg] with the package manager you are using. For example, to use apt:
+./install.sh all apt
 ```
 
 ## Supported OS
 
-- Ubuntu 22.04+
+- Ubuntu 22.04 and later
 - Latest Termux (Android)
 
 ## Environment to be set up
 
-| Type                 | System/Software     |
-| -------------------- | ------------------- |
-| Shell                | zsh                 |
-| Prompt               | starship.rs         |
-| Editor               | Neovim + LazyVim    |
-| Terminal multiplexer | tmux, zellij        |
-| TUI Filer            | broot, yazi         |
-| Terminal emulator    | alacritty, termux   |
+- **Shell**: zsh with starship prompt
+- **Editor**: Neovim configured via LazyVim
+- **Terminal Multiplexer**: tmux for session management, zellij for workspace management
+- **TUI File Managers**: broot for efficient navigation, yazi for rapid file access
+- **Terminal Emulator**: alacritty for performance, termux for Android environments
 
 ## Basic command
 
-```sh
+```bash
 ./install.sh --help                    # Show help and available commands
 ./install.sh backup                    # Backup .config dir
 ./install.sh list [apt|brew|snap|pkg]  # Show install target package list
@@ -56,7 +58,7 @@ cd dotfiles
 
 You can build and enter a container with the following commands.
 
-```sh
+```bash
 docker build -t dotfiles-img .
 docker run -it -d --name dotfiles-con dotfiles-img
 docker exec -it dotfiles-con /bin/zsh
@@ -64,20 +66,23 @@ docker exec -it dotfiles-con /bin/zsh
 
 In container, install apt packages
 
-```sh
+```bash
 cd dotfiles
 ./install all apt
 ```
 
 or install Homebrew with following command. (USERNAME/PASSWORD: user/user)
 
-```sh
+```bash
 cd dotfiles
 ./install all brew
 ```
 
 ## Keymaps
 ### tmux prefix_key = ctrl+\
+
+The tmux prefix key is configured to `Ctrl + \` for easier access.
+
 | Key           | Description                   |
 | ------------- | ------------------------------|
 | I             | install tmux plugins with tpm |
