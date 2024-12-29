@@ -1,0 +1,13 @@
+# brew
+[ -f /home/linuxbrew/.linuxbrew/bin/brew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+if command -v brew &>/dev/null; then
+  bp=$(brew --prefix)
+
+  # XDG Base
+  export XDG_DATA_DIRS="$bp/share:$XDG_DATA_DIRS"
+  
+  # zsh plugins
+  source "$bp/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "$bp/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi

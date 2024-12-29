@@ -1,0 +1,13 @@
+# compdef
+command -v docker &>/dev/null && compdef d=docker
+command -v eza &>/dev/null compdef e=eza
+command -v git &>/dev/null compdef g=git
+command -v lazydocker &>/dev/null compdef lzd=lazydocker
+command -v lazygit &>/dev/null compdef lzg=lazygit
+command -v nvim &>/dev/null compdef n=nvim
+command -v python3 &>/dev/null compdef py=python3
+command -v rg &>/dev/null compdef r=rg
+command -v systemctl &>/dev/null compdef sc=systemctl
+command -v tmux &>/dev/null compdef t=tmux
+command -v xargs &>/dev/null compdef x=xargs
+command -v zellij &>/dev/null compdef zj=zellij
