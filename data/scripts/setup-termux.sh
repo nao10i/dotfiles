@@ -15,7 +15,7 @@ DOTFILES_DATA="$DOTFILES_ROOT/data"
 DOTFILES_CONFIG="$DOTFILES_ROOT/config"
 
 # install packages
-cat "$DOTFILES_DATA/pkg-packages.txt" | xargs pkg i -y
+cat "$DOTFILES_DATA/txt/pkg-packages.txt" | xargs pkg i -y
 
 # zsh
 chsh -s zsh
