@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles for Ubuntu and Termux
 
 Welcome to my dotfiles.
 
@@ -10,25 +10,25 @@ Welcome to my dotfiles.
 git clone https://github.com/nao10i/dotfiles.git
 cd dotfiles
 
-# To install all components using your preferred package manager, run:
+# Install all components using your preferred package manager:
 # ./install.sh all [apt|brew|snap|pkg]
 
-# Replace [apt|brew|snap|pkg] with the package manager you are using. For example, to use apt:
+# Replace [apt|brew|snap|pkg] with your package manager of choice. For example, to use apt:
 ./install.sh all apt
 ```
 
 ## Supported OS
 
-- Ubuntu 22.04 and later
-- Latest Termux (Android)
+- Ubuntu 22.04 and newer
+- The latest version of Termux on Android
 
 ## Environment to be set up
 
-- **Shell**: zsh with starship prompt
+- **Shell**: zsh with the starship prompt
 - **Editor**: Neovim configured via LazyVim
-- **Terminal Multiplexer**: tmux for session management, zellij for workspace management
+- **Terminal Multiplexers**: tmux for session management, zellij for workspace management
 - **TUI File Managers**: broot for efficient navigation, yazi for rapid file access
-- **Terminal Emulator**: alacritty for performance, termux for Android environments
+- **Terminal Emulator**: Alacritty for performance, Termux for Android environments
 
 ## Basic command
 
