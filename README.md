@@ -14,7 +14,7 @@ cd dotfiles
 
 ## Supported OS
 
-- Ubuntu 22.04-
+- Ubuntu 22.04+
 - Latest Termux (Android)
 
 ## Environment to be set up
@@ -27,6 +27,30 @@ cd dotfiles
 | Terminal multiplexer | tmux, zellij        |
 | TUI Filer            | broot, yazi         |
 | Terminal emulator    | alacritty, termux   |
+
+## Basic command
+
+```sh
+./install.sh --help                    # Show help and available commands
+./install.sh backup                    # Backup .config dir
+./install.sh list [apt|brew|snap|pkg]  # Show install target package list
+./install.sh [package_name]            # Install individual package
+```
+
+### Install individual package list
+
+| Package Name  | Description                       |
+| ------------- | --------------------------------- |
+| hackgen       | HackGen font                      |
+| docker        | docker-ce (additional repository) |
+| fnm           | latest FNM and Node.js            |
+| fzf           | fzf (github.com)                  |
+| lazydocker    | LazyDocker                        |
+| lazyvim       | LazyVim                           |
+| neovim        | Neovim and LazyVim                |
+| rustdesk      | RustDesk                          |
+| starship      | starship.rs                       |
+| zed           | Zed editor                        |
 
 ## Docker
 
