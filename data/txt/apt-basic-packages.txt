@@ -9,6 +9,7 @@ libssl-dev
 libxdo3
 locales
 ncal
+pkg-config
 procps
 python3
 python3-pip

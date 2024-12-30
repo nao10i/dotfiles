@@ -643,6 +643,34 @@ install_rustdesk() {
 }
 
 #--------------------------------------------------
+# rustup
+#--------------------------------------------------
+
+install_rustup() {
+  info "Start: ${FUNCNAME[0]}"
+
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  source "$HOME/.cargo/env"
+  rustup default stable
+
+  install_cargo_packages
+
+  info "End: ${FUNCNAME[0]}"
+  return 0
+}
+
+install_cargo_packages() {
+  info "Start: ${FUNCNAME[0]}"
+
+  # cargo install
+  cargo install --locked typst-cli
+  cargo install --locked yazi-fm yazi-cli
+
+  info "End: ${FUNCNAME[0]}"
+  return 0
+}
+
+#--------------------------------------------------
 # neovim
 #--------------------------------------------------
 
@@ -960,6 +988,7 @@ all)
     install_fzf_via_git
     setup_tmux
     install_hackgen
+    install_rustup
     setup_git
     echo_completion_message
     info "End installation with apt"
@@ -1042,6 +1071,9 @@ neovim)
 #   ;;
 rustdesk)
   install_rustdesk
+  ;;
+rustup)
+  install_rustup
   ;;
 snap-packages)
   install_snap_package

@@ -1,5 +1,6 @@
 bash-completion
 bat
+chafa
 cloc
 duf
 eza
