@@ -14,6 +14,6 @@ for fp in $fpaths; do fpath=($fp(N-/) $fpath); done
 
 autoload -Uz compinit
 if [ $(find $ZDOTDIR/.zcompdump -mtime 1) ] ; then
-    compinit
+  compinit
 fi
 compinit -C
