@@ -506,9 +506,17 @@ install_apt_package() {
     sudo dpkg -i "$CACHE_DIR/du-dust_${LATEST_VERSION}-1_amd64.deb"
   fi
 
+  # fastfetch
+  if ! cmd_exists fastfetch; then
+    info 'install fastfetch'
+    sudo add-apt-repository --yes ppa:zhangsongcui3371/fastfetch
+    sudo apt update
+    sudo apt-get install fastfetch
+  fi
   # pre Ubuntu 22.04
   # eza
   if ! cmd_exists eza; then
+    info 'install eza'
     sudo mkdir -p /etc/apt/keyrings
     wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg --yes
     echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
@@ -519,6 +527,7 @@ install_apt_package() {
 
   # git-delta
   if ! cmd_exists delta; then
+    info 'install git-delta'
     local LATEST_VERSION
     LATEST_VERSION=$(get_github_latest_version 'dandavison/delta')
     [ ! -f "$CACHE_DIR/git-delta_amd64.deb" ] &&
