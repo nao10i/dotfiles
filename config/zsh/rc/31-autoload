@@ -1,10 +1,10 @@
 typeset -U fpath FPATH
 
 # zsh-completions
-# "$bp/share/zsh/site-functions"
+# "$BREW_PREFIX/share/zsh/site-functions"
 # /usr/share/zsh/site-functions
 fpaths=(
-  "$bp/share/zsh-completions"
+  "$BREW_PREFIX/share/zsh-completions"
   /usr/share/zsh/vendor-completions
   /usr/local/share/zsh-completions
   "$HOME/.config/zsh/completions"

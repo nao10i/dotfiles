@@ -8,9 +8,7 @@ if [ $SHELL = "/bin/zsh" ]; then
 fi
 
 if command -v brew &>/dev/null; then
-  bp=$(brew --prefix)
-
   # zsh plugins
-  source "$bp/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-  source "$bp/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  source "$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "$BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
