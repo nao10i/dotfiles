@@ -1,9 +1,7 @@
 # Define command-to-alias mapping
 declare -A cmd_aliases=(
     [docker]=d
-    [eza]=e
     [git]=g
-    [rg]=r
     [systemctl]=sc
     [tmux]=t
     [xargs]=x
