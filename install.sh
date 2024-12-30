@@ -419,7 +419,9 @@ install_node_by_fnm() {
     eval "$(fnm env)"
   fi
 
-  fnm completions --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_fnm
+  if [ -d "/usr/share/zsh/vendor-completions" ]; then
+    fnm completions --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_fnm
+  fi
   fnm --version
   fnm install --lts
 
@@ -546,12 +548,15 @@ install_apt_package() {
 install_homebrew() {
   info "Start: ${FUNCNAME[0]}"
 
+  # install requirements
+  # https://docs.brew.sh/Homebrew-on-Linux#requirements
   if cmd_exists apt; then
     sudo apt-get update
     sudo apt-get install -y build-essential procps curl file git
   elif cmd_exists dnf; then
     sudo dnf groupinstall -y 'Development Tools'
     sudo dnf install -y procps-ng curl file git
+    sudo dnf install util-linux-user # for chsh
   elif cmd_exists pacman; then
     sudo pacman -S base-devel procps-ng curl file git --noconfirm
   fi
