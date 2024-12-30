@@ -556,7 +556,7 @@ install_homebrew() {
   elif cmd_exists dnf; then
     sudo dnf groupinstall -y 'Development Tools'
     sudo dnf install -y procps-ng curl file git
-    sudo dnf install -y util-linux-user # for chsh
+    sudo dnf install -y wget util-linux-user # for chsh
   elif cmd_exists pacman; then
     sudo pacman -S base-devel procps-ng curl file git --noconfirm
   fi
