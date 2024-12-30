@@ -556,7 +556,7 @@ install_homebrew() {
   elif cmd_exists dnf; then
     sudo dnf groupinstall -y 'Development Tools'
     sudo dnf install -y procps-ng curl file git
-    sudo dnf install util-linux-user # for chsh
+    sudo dnf install -y util-linux-user # for chsh
   elif cmd_exists pacman; then
     sudo pacman -S base-devel procps-ng curl file git --noconfirm
   fi
@@ -581,7 +581,7 @@ install_homebrew() {
 
   cp -r "$SCRIPT_DIR"/config/lazygit "$CONFIG_HOME"
   cp -r "$SCRIPT_DIR"/config/starship "$CONFIG_HOME"/
-  starship preset nerd-font-symbols -o "$CONFIG_HOME"/nerd.toml
+  starship preset nerd-font-symbols -o "$CONFIG_HOME"/starship/nerd.toml
 
   info "End: ${FUNCNAME[0]}"
   return 0

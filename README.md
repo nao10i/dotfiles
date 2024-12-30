@@ -1,4 +1,4 @@
-# Dotfiles for Ubuntu and Termux
+# Dotfiles for Linux and Termux
 
 Welcome to my dotfiles.
 
@@ -13,14 +13,22 @@ cd dotfiles
 # Install all components using your preferred package manager:
 # ./install.sh all [apt|brew|snap|pkg]
 
-# Replace [apt|brew|snap|pkg] with your package manager of choice. For example, to use apt:
-./install.sh all apt
+# Replace [apt|brew|snap|pkg] with your package manager of choice.
+# For example, to use brew on Linux:
+./install.sh all brew
+
+# To use pkg on Termux:
+./install.sh all pkg
 ```
 
 ## Supported OS
 
-- Ubuntu 22.04 and newer
-- The latest version of Termux on Android
+- Linux
+  - Ubuntu 22.04 and newer (recommended)
+  - Arch Linux
+  - Fedora / Alma Linux
+- Android
+  - The latest version of Termux
 
 ## Environment to be set up
 
