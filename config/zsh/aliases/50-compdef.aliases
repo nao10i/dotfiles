@@ -3,7 +3,6 @@ declare -A cmd_aliases=(
     [docker]=d
     [eza]=e
     [git]=g
-    [lazydocker]=lzd
     [nvim]=n
     [python3]=py
     [rg]=r
