@@ -1,10 +1,8 @@
-# Optimized compdef with alias mapping
+# Define command-to-alias mapping
 declare -A cmd_aliases=(
     [docker]=d
     [eza]=e
     [git]=g
-    [nvim]=n
-    [python3]=py
     [rg]=r
     [systemctl]=sc
     [tmux]=t
@@ -14,8 +12,15 @@ declare -A cmd_aliases=(
 
 for cmd in "${(@k)cmd_aliases}"; do
     alias_name=${cmd_aliases[$cmd]}
+
+    # Check if the command exists
     if command -v $cmd &>/dev/null; then
-        compdef "$alias_name"=$cmd
+        # Check if completion function exists
+        if whence "_$cmd" &>/dev/null; then
+            compdef "$alias_name"=$cmd
+        else
+            #echo "Warning: No completion function for $cmd"
+        fi
     fi
 done
 
