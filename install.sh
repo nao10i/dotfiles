@@ -419,9 +419,9 @@ install_node_by_fnm() {
     eval "$(fnm env)"
   fi
 
-  if [ -d "/usr/share/zsh/vendor-completions" ]; then
-    fnm completions --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_fnm
-  fi
+  mkdir -p "$CONFIG_HOME/zsh/completions"
+  fnm completions --shell zsh > "$CONFIG_HOME/zsh/completions/_fnm"
+
   fnm --version
   fnm install --lts
 
@@ -894,17 +894,8 @@ setup_tmux() {
 setup_zellij() {
   info "Start: ${FUNCNAME[0]}"
 
-  dirs=(
-    "/usr/share/zsh/vendor-completions"
-    "/usr/share/zsh/site-functions"
-    "/home/linuxbrew/.linuxbrew/share/zsh/site-functions"
-  )
-
-  for dir in "${dirs[@]}"; do
-    if [ -d "$dir" ]; then
-      zellij setup --generate-completion zsh | sudo tee "$dir/_zellij" >/dev/null
-    fi
-  done
+  mkdir -p "$CONFIG_HOME/zsh/completions"
+  zellij setup --generate-completion zsh > "$CONFIG_HOME/zsh/completions/_zellij"
 
   cp -r "$SCRIPT_DIR/config/zellij" "$CONFIG_HOME"
 

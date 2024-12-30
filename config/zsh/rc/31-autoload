@@ -1,12 +1,13 @@
 typeset -U fpath FPATH
 
 # zsh-completions
+# "$bp/share/zsh/site-functions"
+# /usr/share/zsh/site-functions
 fpaths=(
   "$bp/share/zsh-completions"
-  "$bp/share/zsh/site-functions"
   /usr/share/zsh/vendor-completions
   /usr/local/share/zsh-completions
-  /usr/share/zsh/site-functions
+  "$HOME/.config/zsh/completions"
   "$XDG_DATA_HOME/zsh-completions/src"
 )
 for fp in $fpaths; do fpath=($fp(N-/) $fpath); done
