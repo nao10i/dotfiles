@@ -26,7 +26,7 @@ cd dotfiles
 - Linux
   - Ubuntu 22.04 and newer (recommended)
   - Arch Linux
-  - Fedora / Alma Linux
+  - Fedora
 - Android
   - The latest version of Termux
 
