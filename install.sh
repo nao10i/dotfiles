@@ -894,7 +894,18 @@ setup_tmux() {
 setup_zellij() {
   info "Start: ${FUNCNAME[0]}"
 
-  zellij setup --generate-completion zsh | sudo tee /usr/share/zsh/vendor-completions/_zellij >/dev/null
+  dirs=(
+    "/usr/share/zsh/vendor-completions"
+    "/usr/share/zsh/site-functions"
+    "/home/linuxbrew/.linuxbrew/share/zsh/site-functions"
+  )
+
+  for dir in "${dirs[@]}"; do
+    if [ -d "$dir" ]; then
+      zellij setup --generate-completion zsh | sudo tee "$dir/_zellij" >/dev/null
+    fi
+  done
+
   cp -r "$SCRIPT_DIR/config/zellij" "$CONFIG_HOME"
 
   info "End: ${FUNCNAME[0]}"
@@ -1005,6 +1016,7 @@ all)
     install_node_by_fnm
     install_lazyvim
     setup_tmux
+    setup_zellij
     install_hackgen
     setup_git
     echo_completion_message
