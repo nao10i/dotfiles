@@ -13,7 +13,8 @@ fpaths=(
 for fp in $fpaths; do fpath=($fp(N-/) $fpath); done
 
 autoload -Uz compinit
-if [ $(find $ZDOTDIR/.zcompdump -mtime 1) ] ; then
+if [[ ! -e $ZDOTDIR/.zcompdump || $(find $ZDOTDIR/.zcompdump -mtime 1 2>/dev/null) ]]; then
   compinit
 fi
 compinit -C
+
