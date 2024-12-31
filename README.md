@@ -4,7 +4,7 @@ Welcome to my dotfiles.
 
 ## Linux Terminal
 
-<img src="https://github.com/user-attachments/assets/f5af74ae-17ed-4197-85ad-8e467baeae5f" width="800">
+<img src="https://github.com/user-attachments/assets/3be7c42f-ee48-4714-a4a5-d5bd0aa7045f" width="800">
 
 ## Termux
 
