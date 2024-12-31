@@ -2,7 +2,13 @@
 
 Welcome to my dotfiles.
 
-![terminal-sample](data/images/terminal.png "terminal sample")
+## Linux Terminal
+
+<img src="https://github.com/user-attachments/assets/f5af74ae-17ed-4197-85ad-8e467baeae5f" width="800">
+
+## Termux
+
+<img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320">
 
 ## Installation
 
