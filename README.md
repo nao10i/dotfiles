@@ -1,6 +1,6 @@
 # Dotfiles for Linux and Termux
 
-Welcome to my dotfiles.
+Welcome to my dotfiles. Easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
 
 ## Linux Terminal
 
