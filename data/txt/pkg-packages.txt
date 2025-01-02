@@ -36,6 +36,7 @@ python-pip
 python
 p7zip
 ripgrep
+ruff
 rust
 starship
 tar
