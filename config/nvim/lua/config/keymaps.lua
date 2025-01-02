@@ -11,13 +11,12 @@ local map = vim.keymap.set
 -- unmap("t", "<C-k>")
 -- unmap("t", "<C-l>")
 map("i", "<M-`>", "<Esc>")
-map("n", "<F1>", "<Esc>")
-map("v", "<F1>", "<Esc>")
-map("i", "<F1>", "<Esc>")
+-- map("n", "<F1>", "<Esc>")
+-- map("v", "<F1>", "<Esc>")
+-- map("i", "<F1>", "<Esc>")
 map("n", "<F2>", "i")
 map("v", "<F2>", "i")
 map("i", "<F2>", "")
-map("i", "<F3>", "<Esc>")
 
 -- Forward / Backward word
 map("n", "<C-Right>", "W")
