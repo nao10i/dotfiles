@@ -46,6 +46,26 @@ map("i", "<M-b>", "<S-Left>")
 map("i", "<M-f>", "<S-Right>")
 map("i", "<C-u>", "<C-o>^<C-o>d$", { noremap = true, silent = true })
 map("i", "<C-y>", "<C-o>p", { noremap = true, silent = true })
+map('i', '<C-w>', function()
+  local col = vim.fn.col('.')
+  if col == 1 then
+    return ''
+  end
+
+  local line = vim.fn.getline('.')
+  local before_cursor = line:sub(1, col - 1)
+
+  local last_boundary = before_cursor:find('%s[^%s]+%s*$') or 0
+
+  local delete_length = col - last_boundary - 1
+  if delete_length <= 0 then
+    return ''
+  end
+
+  return vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-\\><C-o>' .. delete_length .. 'X', true, false, true),
+    'n', true)
+end, { expr = true })
+
 
 -- Override Ctrl-k (LSP Signature Help)
 -- vim.api.nvim_create_autocmd("LspAttach", {
