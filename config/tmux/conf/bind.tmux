@@ -18,7 +18,7 @@ bind A command-prompt "rename-window %%"
 # Select
 bind -n M-a choose-tree
 bind -n M-e choose-session
-bind -n M-w choose-tree -w
+# bind -n M-w choose-tree -w
 bind C-w choose-window
 
 # Session (on Linux)

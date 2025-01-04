@@ -47,6 +47,11 @@ map("i", "<M-f>", "<S-Right>")
 map("i", "<C-u>", "<C-o>^<C-o>d$", { noremap = true, silent = true })
 map("i", "<C-y>", "<C-o>p", { noremap = true, silent = true })
 map('i', '<C-w>', function()
+  return vim.fn.col('.') > 1 and
+      vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-\\><C-o>db', true, false, true), 'n', true) or ''
+end, { expr = true })
+
+map('i', '<M-w>', function()
   local col = vim.fn.col('.')
   if col == 1 then return '' end
 
