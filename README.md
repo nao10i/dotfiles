@@ -62,6 +62,7 @@ cd dotfiles
 | fnm           | latest FNM and Node.js            |
 | fzf           | fzf (github.com)                  |
 | lazydocker    | LazyDocker                        |
+| lazygit       | LazyGit                           |
 | lazyvim       | LazyVim                           |
 | neovim        | Neovim and LazyVim                |
 | rustdesk      | RustDesk                          |
