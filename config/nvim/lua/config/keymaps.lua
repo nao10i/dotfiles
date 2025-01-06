@@ -73,6 +73,12 @@ map('i', '<M-w>', function()
   )
 end, { expr = true })
 
+-- Undo
+map("i", "<C-/>", "<C-o>u", { noremap = true, silent = true })
+map("i", "<C-_>", "<C-o>u", { noremap = true, silent = true })
+-- Redo
+map("i", "<C-r>", "<C-o><C-r>", { noremap = true, silent = true })
+
 -- Override Ctrl-k (LSP Signature Help)
 -- vim.api.nvim_create_autocmd("LspAttach", {
 -- 	callback = function(args)
