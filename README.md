@@ -108,8 +108,8 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 ### tmux alt key shortcut
 | Key       | Description                     | Prefix key     |
 | --------- | ------------------------------- | -------------- |
-| Alt+(←/→) | switch to previous/next window  | p              |
-| Alt+(↑/↓) | create/delete window            | c              |
+| Alt+(←/→) | switch to previous/next window  | p/n            |
+| Alt+(↑/↓) | create/delete window            | c/&            |
 | Alt+-     | split window horizontally       | -              |
 | Alt+\     | split window vertically         | \              |
 | Alt+[1-9] | switch to 1-9 window            | [1-9]          |
@@ -117,5 +117,5 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 ### tmux alt+shift key shortcut
 | Key             | Description                     | Prefix key     |
 | --------------- | ------------------------------- | -------------- |
-| Alt+Shift+(←/→) | switch to previous/next session | p              |
-| Alt+Shift+(↑/↓) | create/delete session           | c              |
+| Alt+Shift+(←/→) | switch to previous/next session | (              |
+| Alt+Shift+(↑/↓) | create/delete session           | )              |
