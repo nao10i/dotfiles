@@ -34,6 +34,7 @@ cp -r "$DOTFILES_CONFIG"/tmux/* "$TMUXCONF"
 cp -r "$DOTFILES_CONFIG"/starship "$HOME/.config/"
 
 # lazygit
+mkdir -p "$CONFIG_HOME/lazygit/"
 cp -r "$DOTFILES_CONFIG"/lazygit/* "$CONFIG_HOME/lazygit/"
 
 # install lazyvim
