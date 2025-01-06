@@ -452,7 +452,7 @@ install_hackgen() {
   debug $LATEST_VERSION
 
   [ ! -f "$CACHE_DIR/HackGen_NF_v${LATEST_VERSION}.zip" ] &&
-    wget -P $CACHE_DIR "https://github.com/yuru7/HackGen/releases/download/v${LATEST_VERSION}/HackGen_NF_v${LATEST_VERSION}.zip"
+    curl -Lo "$CACHE_DIR/HackGen_NF_v${LATEST_VERSION}.zip" "https://github.com/yuru7/HackGen/releases/download/v${LATEST_VERSION}/HackGen_NF_v${LATEST_VERSION}.zip"
 
   unzip "$CACHE_DIR/HackGen_NF_v${LATEST_VERSION}.zip" -d $CACHE_DIR
 
