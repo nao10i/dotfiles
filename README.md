@@ -98,24 +98,24 @@ cd dotfiles
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
 
-| Key           | Description                   |
-| ------------- | ------------------------------|
-| I             | install tmux plugins with tpm |
-| Ctrl+s        | save tmux env                 |
-| Ctrl+r        | restore tmux env              |
-| e             | switch pane-synchronize mode  |
+| Key                             | Description                   |
+| ------------------------------- | ------------------------------|
+| <kbd>I</kbd>                    | install tmux plugins with tpm |
+| <kbd>Ctrl</kbd>+<kbd>s</kbd>    | save tmux env                 |
+| <kbd>Ctrl</kbd>+<kbd>r</kbd>    | restore tmux env              |
+| <kbd>e</kbd>                    | switch pane-synchronize mode  |
 
 ### tmux alt key shortcut
-| Key       | Description                     | Prefix key     |
-| --------- | ------------------------------- | -------------- |
-| Alt+(←/→) | switch to previous/next window  | p/n            |
-| Alt+(↑/↓) | create/delete window            | c/&            |
-| Alt+-     | split window horizontally       | -              |
-| Alt+\     | split window vertically         | \              |
-| Alt+[1-9] | switch to 1-9 window            | [1-9]          |
+| Key                                        | Description                     | Prefix key +              |
+| ------------------------------------------ | ------------------------------- | ------------------------- |
+| <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window  | <kbd>p</kbd>/<kbd>n</kbd> |
+| <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window            | <kbd>c/<kbd>&</kbd>       |
+| <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally       | <kbd>-</kbd>              |
+| <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically         | <kbd>\\</kbd>             |
+| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window            | <kbd>[1-9]</kbd>          |
 
 ### tmux alt+shift key shortcut
-| Key             | Description                     | Prefix key     |
-| --------------- | ------------------------------- | -------------- |
-| Alt+Shift+(←/→) | switch to previous/next session | (              |
-| Alt+Shift+(↑/↓) | create/delete session           | )              |
+| Key                                                         | Description                     | Prefix key +                |
+| ----------------------------------------------------------- | ------------------------------- | --------------------------- |
+| <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next session | <kbd>(</kbd>/<kbd>)</kbd>   |
+| <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete session           |                             |
