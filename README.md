@@ -10,6 +10,10 @@ Welcome to my dotfiles. Easily set up a visually stunning and colorful terminal 
 
 <img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320">
 
+## WSL
+
+<img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime">
+
 ## Installation
 
 ```bash
