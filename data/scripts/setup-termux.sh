@@ -59,4 +59,4 @@ cp "$DOTFILES_ROOT"/config/termux/termux.properties ~/.termux/
 cp "$DOTFILES_ROOT"/config/termux/colors.properties ~/.termux/
 
 echo 'done.'
-
+echo '*** Please restart Termux to apply all changes ***'
