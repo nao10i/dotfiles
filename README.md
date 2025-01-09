@@ -1,6 +1,6 @@
 # Dotfiles for Linux and Termux
 
-Welcome to my dotfiles. Easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
+Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
 
 ## Linux Terminal
 
@@ -18,15 +18,22 @@ Welcome to my dotfiles. Easily set up a visually stunning and colorful terminal 
 
 ```bash
 git clone https://github.com/nao10i/dotfiles.git
+```
+
+```bash
 cd dotfiles
 
 # Install all components using your preferred package manager:
 # ./install.sh all [apt|brew|snap|pkg]
+```
 
+```bash
 # Replace [apt|brew|snap|pkg] with your package manager of choice.
 # For example, to use brew on Linux:
 ./install.sh all brew
+```
 
+```bash
 # To use pkg on Termux:
 ./install.sh all pkg
 ```
@@ -48,7 +55,7 @@ cd dotfiles
 - **TUI File Managers**: broot for efficient navigation, yazi for rapid file access
 - **Terminal Emulator**: Alacritty for performance, Termux for Android environments
 
-## Basic command
+## Basic commands
 
 ```bash
 ./install.sh --help                    # Show help and available commands
