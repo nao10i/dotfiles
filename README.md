@@ -22,12 +22,12 @@ git clone https://github.com/nao10i/dotfiles.git
 
 ```bash
 cd dotfiles
-
-# Install all components using your preferred package manager:
-# ./install.sh all [apt|brew|snap|pkg]
 ```
 
 ```bash
+# Install all components using your preferred package manager:
+# ./install.sh all [apt|brew|snap|pkg]
+
 # Replace [apt|brew|snap|pkg] with your package manager of choice.
 # For example, to use brew on Linux:
 ./install.sh all brew
