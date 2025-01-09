@@ -106,16 +106,17 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>e</kbd>                    | switch pane-synchronize mode  |
 
 ### tmux alt key shortcut
-| Key                                        | Description                     | Prefix key +              |
-| ------------------------------------------ | ------------------------------- | ------------------------- |
-| <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window  | <kbd>p</kbd>/<kbd>n</kbd> |
-| <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window            | <kbd>c</kbd>/<kbd>&</kbd> |
-| <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally       | <kbd>-</kbd>              |
-| <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically         | <kbd>\\</kbd>             |
-| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window            | <kbd>[1-9]</kbd>          |
+| Key                                        | Description                     | Prefix key +                                        |
+| ------------------------------------------ | ------------------------------- | --------------------------------------------------- |
+| <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window            | <kbd>c</kbd>/<kbd>&</kbd>                           |
+| <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window  | <kbd>p</kbd>/<kbd>n</kbd>                           |
+| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window            | <kbd>[1-9]</kbd>                                    |
+| <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally       | <kbd>-</kbd>                                        |
+| <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically         | <kbd>\\</kbd>                                       |
+| <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | go to left/down/up/right pane   | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
 
 ### tmux alt+shift key shortcut
 | Key                                                         | Description                     | Prefix key +                |
 | ----------------------------------------------------------- | ------------------------------- | --------------------------- |
-| <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next session | <kbd>(</kbd>/<kbd>)</kbd>   |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete session           |                             |
+| <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next session | <kbd>(</kbd>/<kbd>)</kbd>   |
