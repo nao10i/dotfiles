@@ -41,7 +41,7 @@ cd dotfiles
 
 ## ✅ Supported OS
 
-- Linux 🖥️
+- Linux 🐧
   - Ubuntu 22.04 and newer (recommended)
   - Arch Linux
   - Fedora
