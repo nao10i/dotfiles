@@ -1,5 +1,6 @@
 # Dotfiles for Linux and Termux
 
+## 😸 Welcome
 Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
 
 ## Linux Terminal
@@ -14,7 +15,7 @@ Welcome to my dotfiles. This repository helps easily set up a visually stunning 
 
 <img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime">
 
-## Installation
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/nao10i/dotfiles.git
@@ -38,16 +39,16 @@ cd dotfiles
 ./install.sh all pkg
 ```
 
-## Supported OS
+## ✅ Supported OS
 
-- Linux
+- Linux 🖥️
   - Ubuntu 22.04 and newer (recommended)
   - Arch Linux
   - Fedora
-- Android
+- Android 📱
   - The latest version of Termux
 
-## Environment to be set up
+## 💻 Environment to be set up
 
 - **Shell**: zsh with the starship prompt
 - **Editor**: Neovim configured via LazyVim
@@ -55,7 +56,7 @@ cd dotfiles
 - **TUI File Managers**: broot for efficient navigation, yazi for rapid file access
 - **Terminal Emulator**: Alacritty for performance, Termux for Android environments
 
-## Basic commands
+## ☕ Basic commands
 
 ```bash
 ./install.sh --help                    # Show help and available commands
@@ -64,7 +65,7 @@ cd dotfiles
 ./install.sh [package_name]            # Install individual package
 ```
 
-### Install individual package list
+### 📗 Install individual package list
 
 | Package Name  | Description                       |
 | ------------- | --------------------------------- |
@@ -80,7 +81,7 @@ cd dotfiles
 | starship      | starship.rs                       |
 | zed           | Zed editor                        |
 
-## Docker
+## 🐳 Docker
 
 You can build and enter a container with the following commands.
 
@@ -104,7 +105,7 @@ cd dotfiles
 ./install all brew
 ```
 
-## Keymaps
+## ⌨️ Keymaps
 ### tmux prefix_key = ctrl+\
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
@@ -131,3 +132,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | ----------------------------------------------------------- | ------------------------------- | --------------------------- |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete session           |                             |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next session | <kbd>(</kbd>/<kbd>)</kbd>   |
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
