@@ -106,7 +106,7 @@ cd dotfiles
 ```
 
 ## ⌨️ Keymaps
-### tmux prefix_key = ctrl+\
+### tmux prefix_key
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
 
