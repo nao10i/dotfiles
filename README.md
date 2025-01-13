@@ -65,6 +65,8 @@ cd dotfiles
 ./install.sh [package_name]            # Install individual package
 ```
 
+![help](https://github.com/user-attachments/assets/f6d08c36-53c0-4d52-b4c1-91503c116e05)
+
 ### 📗 Install individual package list
 
 | Package Name  | Description                       |
