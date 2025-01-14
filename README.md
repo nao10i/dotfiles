@@ -1,5 +1,12 @@
 # Dotfiles for Linux and Termux
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nao10i/dotfiles)
+![GitHub repo size](https://img.shields.io/github/repo-size/nao10i/dotfiles)
+[![Tokei total line](https://tokei.rs/b1/github/nao10i/dotfiles)](https://github.com/nao10i/dotfiles)
+
+![GitHub Created At](https://img.shields.io/github/created-at/nao10i/dotfiles)
+![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles)
+
 ## 😸 Welcome
 Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
 
@@ -19,9 +26,6 @@ Welcome to my dotfiles. This repository helps easily set up a visually stunning 
 
 ```bash
 git clone https://github.com/nao10i/dotfiles.git
-```
-
-```bash
 cd dotfiles
 ```
 
@@ -65,7 +69,7 @@ cd dotfiles
 ./install.sh [package_name]            # Install individual package
 ```
 
-![help](https://github.com/user-attachments/assets/ef09c241-0af0-4660-8bf3-33998be66416)
+<img src="https://github.com/user-attachments/assets/ef09c241-0af0-4660-8bf3-33998be66416" width="800" alt="help">
 
 ### 📗 Install individual package list
 
