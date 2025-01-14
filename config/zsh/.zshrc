@@ -1,10 +1,10 @@
 # rc
-for rc_file in $ZDOTDIR/rc/[0-9][0-9]*; do
+for rc_file in $ZDOTDIR/rc/[0-9][0-9]*.zsh; do
   [[ -f $rc_file ]] && source "$rc_file"
 done
 
 # aliases
-for alias_file in $ZDOTDIR/aliases/[0-9][0-9]*.aliases; do
+for alias_file in $ZDOTDIR/aliases/[0-9][0-9]*.aliases.zsh; do
   source "$alias_file"
 done
 
