@@ -10,17 +10,17 @@
 ## 😸 Welcome
 Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
 
-## Linux Terminal
+| Linux Terminal |
+| :-: |
+| <img src="https://github.com/user-attachments/assets/3be7c42f-ee48-4714-a4a5-d5bd0aa7045f" width="800"> |
 
-<img src="https://github.com/user-attachments/assets/3be7c42f-ee48-4714-a4a5-d5bd0aa7045f" width="800">
+| Termux |
+| :-: |
+| <img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320"> |
 
-## Termux
-
-<img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320">
-
-## WSL
-
-<img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime">
+| WSL2 |
+| :-: |
+| <img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime"> |
 
 ## 🚀 Installation
 
@@ -52,7 +52,7 @@ cd dotfiles
 - Android 📱
   - The latest version of Termux
 
-## 💻 Environment to be set up
+## ✨ Features
 
 - **Shell**: zsh with the starship prompt
 - **Editor**: Neovim configured via LazyVim
@@ -69,7 +69,9 @@ cd dotfiles
 ./install.sh [package_name]            # Install individual package
 ```
 
-<img src="https://github.com/user-attachments/assets/ef09c241-0af0-4660-8bf3-33998be66416" width="800" alt="help">
+| Help image |
+| :---: |
+| <img src="https://github.com/user-attachments/assets/ef09c241-0af0-4660-8bf3-33998be66416" width="800" alt="help"> |
 
 ### 📗 Install individual package list
 
@@ -86,6 +88,13 @@ cd dotfiles
 | rustdesk      | RustDesk                          |
 | starship      | starship.rs                       |
 | zed           | Zed editor                        |
+
+<!--
+- [apt packages](data/txt/apt-packages.txt)
+- [brew packages](Brewfile)
+- [snap packages](data/txt/snap-packages.txt)
+- [pkg packages](data/txt/pkg-packages.txt)
+-->
 
 ## 🐳 Docker
 
