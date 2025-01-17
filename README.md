@@ -121,7 +121,17 @@ cd dotfiles
 ```
 
 ## ⌨️ Keymaps
-### tmux prefix_key
+### Zsh
+
+Based on Emacs mode with `bindkey -e`, with some additional key bindings added.
+
+| Key                                         | Action                        |
+| ------------------------------------------- | ----------------------------- |
+| <kbd>Ctrl</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | undo / redo                   |
+| <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | backward-word / forward-word  |
+
+### Tmux
+#### tmux prefix_key
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
 
@@ -132,21 +142,37 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>Ctrl</kbd>+<kbd>r</kbd>    | restore tmux env              |
 | <kbd>e</kbd>                    | switch pane-synchronize mode  |
 
-### tmux alt key shortcut
-| Key                                        | Description                     | Prefix key +                                        |
-| ------------------------------------------ | ------------------------------- | --------------------------------------------------- |
-| <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window            | <kbd>c</kbd>/<kbd>&</kbd>                           |
-| <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window  | <kbd>p</kbd>/<kbd>n</kbd>                           |
-| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window            | <kbd>[1-9]</kbd>                                    |
-| <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally       | <kbd>-</kbd>                                        |
-| <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically         | <kbd>\\</kbd>                                       |
-| <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | go to left/down/up/right pane   | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
+#### tmux alt key shortcut
+| Key                                        | Description                       | Prefix key +                                        |
+| ------------------------------------------ | --------------------------------- | --------------------------------------------------- |
+| <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window              | <kbd>c</kbd>/<kbd>&</kbd>                           |
+| <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window    | <kbd>p</kbd>/<kbd>n</kbd>                           |
+| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window              | <kbd>[1-9]</kbd>                                    |
+| <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally         | <kbd>-</kbd>                                        |
+| <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically           | <kbd>\\</kbd>                                       |
+| <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | switch to left/down/up/right pane | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
 
-### tmux alt+shift key shortcut
+#### tmux alt+shift key shortcut
 | Key                                                         | Description                     | Prefix key +                |
 | ----------------------------------------------------------- | ------------------------------- | --------------------------- |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete session           |                             |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next session | <kbd>(</kbd>/<kbd>)</kbd>   |
+
+### Neovim
+
+Based on [LazyVim keymaps](https://www.lazyvim.org/keymaps), with some additional key bindings added.
+
+| Mode  | Key                                         | Description                                                             |
+| ----- | ------------------------------------------- | ----------------------------------------------------------------------- |
+| n,v   | <kbd>Ctrl</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | move to (the end of the previous / the beginning of the next) paragraph |
+| n,v,i | <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | backward word / forward word                                            |
+| i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | Undo                                                                    |
+| i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | Redo                                                                    |
+
+Emacs-like shortcuts are configured in insert mode.
+
+- <kbd>Ctrl</kbd>+<kbd>[abdefnpuwy]</kbd>
+- <kbd>Alt</kbd>+<kbd>[bdf]</kbd>
 
 ## 📜 License
 
