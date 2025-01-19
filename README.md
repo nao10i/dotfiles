@@ -8,7 +8,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles)
 
 ## 😸 Welcome
-Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and some Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
+
+Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
 
 | Linux Terminal |
 | :-: |
@@ -24,10 +25,14 @@ Welcome to my dotfiles. This repository helps easily set up a visually stunning 
 
 ## 🚀 Installation
 
+1. Download
+
 ```bash
 git clone https://github.com/nao10i/dotfiles.git
 cd dotfiles
 ```
+
+2. Install
 
 ```bash
 # Install all components using your preferred package manager:
@@ -121,6 +126,7 @@ cd dotfiles
 ```
 
 ## ⌨️ Keymaps
+
 ### Zsh
 
 Based on Emacs mode with `bindkey -e`, with some additional key bindings added.
@@ -131,6 +137,7 @@ Based on Emacs mode with `bindkey -e`, with some additional key bindings added.
 | <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | backward-word / forward-word  |
 
 ### Tmux
+
 #### tmux prefix_key
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
@@ -143,6 +150,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>e</kbd>                    | switch pane-synchronize mode  |
 
 #### tmux alt key shortcut
+
 | Key                                        | Description                       | Prefix key +                                        |
 | ------------------------------------------ | --------------------------------- | --------------------------------------------------- |
 | <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window              | <kbd>c</kbd>/<kbd>&</kbd>                           |
@@ -153,6 +161,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | switch to left/down/up/right pane | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
 
 #### tmux alt+shift key shortcut
+
 | Key                                                         | Description                     | Prefix key +                |
 | ----------------------------------------------------------- | ------------------------------- | --------------------------- |
 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete session           |                             |
