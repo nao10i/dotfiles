@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles)
 
 ## 😸 Welcome
-Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment (Zsh with starship prompt, tmux, Neovim, and command-line tools based on Golang and Rust to build a terminal environment that starts and operates quickly.) Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
+Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and some Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
 
 | Linux Terminal |
 | :-: |
