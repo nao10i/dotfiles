@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles)
 
 ## 😸 Welcome
-Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. Designed for use in mainly English or Japanese environments.
+Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment (Zsh with starship prompt, tmux, Neovim, and command-line tools based on Golang and Rust to build a terminal environment that starts and operates quickly.) Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
 
 | Linux Terminal |
 | :-: |
@@ -73,21 +73,21 @@ cd dotfiles
 | :---: |
 | <img src="https://github.com/user-attachments/assets/ef09c241-0af0-4660-8bf3-33998be66416" width="800" alt="help"> |
 
-### 📗 Install individual package list
+### 📗 Install individual package
 
-| Package Name  | Description                       |
-| ------------- | --------------------------------- |
-| hackgen       | HackGen font                      |
-| docker        | docker-ce (additional repository) |
-| fnm           | latest FNM and Node.js            |
-| fzf           | fzf (github.com)                  |
-| lazydocker    | LazyDocker                        |
-| lazygit       | LazyGit                           |
-| lazyvim       | LazyVim                           |
-| neovim        | Neovim and LazyVim                |
-| rustdesk      | RustDesk                          |
-| starship      | starship.rs                       |
-| zed           | Zed editor                        |
+| Package Name  | Description                                 |
+| ------------- | ------------------------------------------- |
+| hackgen       | HackGen font (Nerd Font)                    |
+| docker        | docker-ce (additional repository)           |
+| fnm           | latest FNM (Fast Node Manager) and Node.js  |
+| fzf           | fzf (fuzzy finder) from github              |
+| lazydocker    | LazyDocker                                  |
+| lazygit       | LazyGit                                     |
+| lazyvim       | LazyVim                                     |
+| neovim        | Neovim and LazyVim                          |
+| rustdesk      | RustDesk on Ubuntu Desktop                  |
+| starship      | starship.rs                                 |
+| zed           | Zed editor on Linux Desktop                 |
 
 <!--
 - [apt packages](data/txt/apt-packages.txt)
@@ -147,7 +147,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | ------------------------------------------ | --------------------------------- | --------------------------------------------------- |
 | <kbd>Alt</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | create/delete window              | <kbd>c</kbd>/<kbd>&</kbd>                           |
 | <kbd>Alt</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | switch to previous/next window    | <kbd>p</kbd>/<kbd>n</kbd>                           |
-| <kbd>Alt</kbd>+<kbd>[1-9]</kbd>            | switch to 1-9 window              | <kbd>[1-9]</kbd>                                    |
+| <kbd>Alt</kbd>+<kbd>[0-9]</kbd>            | switch to 1-10 window             | <kbd>[0-9]</kbd>                                    |
 | <kbd>Alt</kbd>+<kbd>-</kbd>                | split window horizontally         | <kbd>-</kbd>                                        |
 | <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically           | <kbd>\\</kbd>                                       |
 | <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | switch to left/down/up/right pane | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
