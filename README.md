@@ -95,10 +95,10 @@ cd dotfiles
 | zed           | Zed editor on Linux Desktop                 |
 
 <!--
-- [apt packages](data/txt/apt-packages.txt)
+- [apt packages](assets/txt/apt-packages.txt)
 - [brew packages](Brewfile)
-- [snap packages](data/txt/snap-packages.txt)
-- [pkg packages](data/txt/pkg-packages.txt)
+- [snap packages](assets/txt/snap-packages.txt)
+- [pkg packages](assets/txt/pkg-packages.txt)
 -->
 
 ## 🐳 Docker

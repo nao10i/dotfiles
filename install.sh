@@ -218,13 +218,13 @@ echo_allcommand_usage() {
   info -cc "./$(basename "$0") all <Command>"
 
   info -cg "Commands: "
-  echo_descriptions "$SCRIPT_DIR"/data/tsv/main-commands.tsv 5
+  echo_descriptions "$SCRIPT_DIR"/assets/tsv/main-commands.tsv 5
 
   # list command
   info ""
   info -ny -cg "Show package list: "
   info -cc "./$(basename "$0") list(alias:ls) <Command>"
-  #echo_descriptions "$SCRIPT_DIR"/data/package-managers.tsv
+  #echo_descriptions "$SCRIPT_DIR"/assets/package-managers.tsv
 }
 
 echo_each_command_usage() {
@@ -232,13 +232,13 @@ echo_each_command_usage() {
   info -ny -cg "Individual installation: "
   info -cc "./$(basename "$0") <Package>"
 
-  echo_descriptions "$SCRIPT_DIR"/data/tsv/install-packages.tsv
+  echo_descriptions "$SCRIPT_DIR"/assets/tsv/install-packages.tsv
 
   info ""
   info -ny -cg "Individual set up: "
   info -cc "./$(basename "$0") <Setup>"
 
-  echo_descriptions "$SCRIPT_DIR"/data/tsv/setup-packages.tsv
+  echo_descriptions "$SCRIPT_DIR"/assets/tsv/setup-packages.tsv
 
   return 0
 }
@@ -490,8 +490,8 @@ install_apt_package() {
   info "Start: ${FUNCNAME[0]}"
 
   sudo apt-get update
-  cat "$SCRIPT_DIR"/data/txt/apt-basic-packages.txt | xargs sudo apt-get install -y
-  cat "$SCRIPT_DIR"/data/txt/apt-packages.txt | xargs sudo apt-get install -y
+  cat "$SCRIPT_DIR"/assets/txt/apt-basic-packages.txt | xargs sudo apt-get install -y
+  cat "$SCRIPT_DIR"/assets/txt/apt-packages.txt | xargs sudo apt-get install -y
 
   # .local install
   mkdir -p ~/.local/bin
@@ -600,7 +600,7 @@ install_snap_package() {
   fi
 
   # snap package list
-  snappy_packages="$SCRIPT_DIR"/data/txt/snap-packages.txt
+  snappy_packages="$SCRIPT_DIR"/assets/txt/snap-packages.txt
 
   # install --classic packages
   grep -- '--classic' "$snappy_packages" | sed 's/ --classic//' | xargs -d '\n' -I{} sudo snap install {} --classic
@@ -869,7 +869,7 @@ setup_git() {
 setup_termux() {
   info "Start: ${FUNCNAME[0]}"
 
-  "$SCRIPT_DIR"/data/scripts/setup-termux.sh
+  "$SCRIPT_DIR"/assets/scripts/setup-termux.sh
 
   info "End: ${FUNCNAME[0]}"
   return 0
@@ -937,11 +937,11 @@ echo_list() {
   case "$1" in
   apt)
     info '# Basic packages'
-    cat "$SCRIPT_DIR"/data/txt/apt-basic-packages.txt | sort | xargs -i echo '- {}'
+    cat "$SCRIPT_DIR"/assets/txt/apt-basic-packages.txt | sort | xargs -i echo '- {}'
 
     info ""
     info '# Packages'
-    cat "$SCRIPT_DIR"/data/txt/apt-packages.txt | sort | xargs -i echo '- {}'
+    cat "$SCRIPT_DIR"/assets/txt/apt-packages.txt | sort | xargs -i echo '- {}'
     ;;
   brew)
     info '# Homebrew packages'
@@ -949,11 +949,11 @@ echo_list() {
     ;;
   snap)
     info '# Snap packages'
-    cat "$SCRIPT_DIR"/data/txt/snap-packages.txt | sort | xargs -i echo '- {}'
+    cat "$SCRIPT_DIR"/assets/txt/snap-packages.txt | sort | xargs -i echo '- {}'
     ;;
   pkg)
     info '# Termux pkg packages'
-    cat "$SCRIPT_DIR"/data/txt/pkg-packages.txt | sort | xargs -i echo '- {}'
+    cat "$SCRIPT_DIR"/assets/txt/pkg-packages.txt | sort | xargs -i echo '- {}'
     ;;
   *)
     error 'No list found. Usage: ./install.sh list (apt|brew|snap)'
