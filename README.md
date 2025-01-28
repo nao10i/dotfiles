@@ -1,11 +1,13 @@
 # Dotfiles for Linux and Termux
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nao10i/dotfiles)
-![GitHub repo size](https://img.shields.io/github/repo-size/nao10i/dotfiles)
-[![Tokei total line](https://tokei.rs/b1/github/nao10i/dotfiles)](https://github.com/nao10i/dotfiles)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2377aaff)
+![GitHub repo size](https://img.shields.io/github/repo-size/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2377aaff)
+[![Tokei total line](https://tokei.rs/b1/github/nao10i/dotfiles?category=lines&style=for-the-badge&color=%2377aaff)](https://github.com/nao10i/dotfiles)
 
-![GitHub Created At](https://img.shields.io/github/created-at/nao10i/dotfiles)
-![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles)
+<!--![GitHub Created At](https://img.shields.io/github/created-at/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)-->
+![GitHub License](https://img.shields.io/github/license/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
+![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
+![GitHub Repo stars](https://img.shields.io/github/stars/nao10i/dotfiles?style=for-the-badge&logo=github&color=%23ffdd33)
 
 ## 😸 Welcome
 
