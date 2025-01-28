@@ -2,6 +2,7 @@ FROM ubuntu
 
 SHELL [ "/bin/bash", "-c" ]
 
+# Install apt packages
 RUN apt-get update && \
   apt-get install -y \
   curl \
@@ -35,14 +36,14 @@ RUN groupadd -g $GID $GROUPNAME && \
 USER $USERNAME
 WORKDIR /home/$USERNAME/
 
-# add dotfiles
+# Add dotfiles
 ARG DOTFILES_DIR=/home/$USERNAME/dotfiles
-RUN mkdir -p $DOTFILES_DIR/config 
+RUN mkdir -p $DOTFILES_DIR/config
 COPY --chown=$USERNAME:$USERNAME config $DOTFILES_DIR/config
 COPY --chown=$USERNAME:$USERNAME assets $DOTFILES_DIR/assets
 COPY --chown=$USERNAME:$USERNAME install.sh $DOTFILES_DIR
 COPY --chown=$USERNAME:$USERNAME Brewfile $DOTFILES_DIR
 
-# shellenv 
+# Shellenv
 ENV SHELL=/bin/zsh
 CMD [ "zsh" ]
