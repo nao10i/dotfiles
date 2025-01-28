@@ -97,10 +97,10 @@ alias un='uname -n'
 # alias o='openssl rand 32 | base64'
 alias o='openssl rand --base64 32'
 alias p='pwd'
-alias uuid='cat /proc/sys/kernel/random/uuid'
-#p
+alias pe='printenv'
 #q
 alias rmf='rm -rf'
+alias uuid='cat /proc/sys/kernel/random/uuid'
 alias wi='w -i'
 alias wh='which'
 alias x='xargs'
