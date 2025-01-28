@@ -11,7 +11,7 @@
 
 ## 😸 Welcome
 
-Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments.
+Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments. Grateful that you found this project and took a look!
 
 | Linux Terminal |
 | :-: |
@@ -140,7 +140,7 @@ Based on Emacs mode with `bindkey -e`, with some additional key bindings added.
 
 ### Tmux
 
-#### tmux prefix_key
+#### prefix key
 
 The tmux prefix key is configured to `Ctrl + \` for easier access.
 
@@ -151,7 +151,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>Ctrl</kbd>+<kbd>r</kbd>    | restore tmux env              |
 | <kbd>e</kbd>                    | switch pane-synchronize mode  |
 
-#### tmux alt key shortcut
+#### alt key shortcut
 
 | Key                                        | Description                       | Prefix key +                                        |
 | ------------------------------------------ | --------------------------------- | --------------------------------------------------- |
@@ -162,7 +162,7 @@ The tmux prefix key is configured to `Ctrl + \` for easier access.
 | <kbd>Alt</kbd>+<kbd>\\</kbd>               | split window vertically           | <kbd>\\</kbd>                                       |
 | <kbd>Alt</kbd>+<kbd>[hjkl]</kbd>           | switch to left/down/up/right pane | <kbd>←</kbd>/<kbd>↓</kbd>/<kbd>↑</kbd>/<kbd>→</kbd> |
 
-#### tmux alt+shift key shortcut
+#### alt+shift key shortcut
 
 | Key                                                         | Description                     | Prefix key +                |
 | ----------------------------------------------------------- | ------------------------------- | --------------------------- |
@@ -180,7 +180,7 @@ Based on [LazyVim keymaps](https://www.lazyvim.org/keymaps), with some additiona
 | i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | Undo                                                                    |
 | i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | Redo                                                                    |
 
-Emacs-like shortcuts are configured in insert mode.
+Emacs-like shortcuts are configured in insert mode. For more information, please click [here](docs/neovim.md).
 
 - <kbd>Ctrl</kbd>+<kbd>[abdefnpuwy]</kbd>
 - <kbd>Alt</kbd>+<kbd>[bdf]</kbd>
