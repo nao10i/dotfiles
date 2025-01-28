@@ -251,7 +251,7 @@ echo_completion_message() {
 }
 
 ###################################################
-# util
+# utils
 ###################################################
 
 cmd_exists() {
@@ -337,6 +337,9 @@ setup_zsh() {
 ###################################################
 # installation
 ###################################################
+#--------------------------------------------------
+# starship.rs
+#--------------------------------------------------
 
 install_or_update_starship() {
   info "Start: ${FUNCNAME[0]}"
@@ -350,6 +353,10 @@ install_or_update_starship() {
   return 0
 }
 
+#--------------------------------------------------
+# fzf
+#--------------------------------------------------
+
 install_fzf_via_git() {
   info "Start: ${FUNCNAME[0]}"
 
@@ -359,6 +366,10 @@ install_fzf_via_git() {
   info "End: ${FUNCNAME[0]}"
   return 0
 }
+
+#--------------------------------------------------
+# nvm
+#--------------------------------------------------
 
 # install_nvm() {
 #   info "Start: ${FUNCNAME[0]}"
@@ -373,15 +384,6 @@ install_fzf_via_git() {
 #   return 0
 # }
 
-install_fnm() {
-  info "Start: ${FUNCNAME[0]}"
-
-  curl -fsSL https://fnm.vercel.app/install | bash
-  install_node_by_fnm
-
-  info "End: ${FUNCNAME[0]}"
-  return 0
-}
 
 # install_node_by_nvm() {
 #   info "Start: ${FUNCNAME[0]}"
@@ -409,6 +411,20 @@ install_fnm() {
 #   return 0
 # }
 
+#--------------------------------------------------
+# FNM
+#--------------------------------------------------
+
+install_fnm() {
+  info "Start: ${FUNCNAME[0]}"
+
+  curl -fsSL https://fnm.vercel.app/install | bash
+  install_node_by_fnm
+
+  info "End: ${FUNCNAME[0]}"
+  return 0
+}
+
 install_node_by_fnm() {
   info "Start: ${FUNCNAME[0]}"
 
@@ -429,6 +445,10 @@ install_node_by_fnm() {
   return 0
 }
 
+#--------------------------------------------------
+# Zed editor
+#--------------------------------------------------
+
 install_zed() {
   info "Start: ${FUNCNAME[0]}"
 
@@ -439,6 +459,10 @@ install_zed() {
   info "End: ${FUNCNAME[0]}"
   return 0
 }
+
+#--------------------------------------------------
+# HackGen font
+#--------------------------------------------------
 
 install_hackgen() {
   info "Start: ${FUNCNAME[0]}"
@@ -472,6 +496,10 @@ install_hackgen() {
   info "End: ${FUNCNAME[0]}"
   return 0
 }
+
+#--------------------------------------------------
+# terminator
+#--------------------------------------------------
 
 # setup_terminator() {
 #   info "Start: ${FUNCNAME[0]}"
@@ -817,7 +845,7 @@ install_lazdocker() {
 # settings
 ###################################################
 #--------------------------------------------------
-# dotfiles
+# backup
 #--------------------------------------------------
 
 backup_dotfiles() {

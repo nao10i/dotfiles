@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#--------------------------------------------------
+# preprocess
+#--------------------------------------------------
+
 # check env
 [ -z "$TERMUX_VERSION" ] && echo 'please use this in termux' && exit 1
 
@@ -14,8 +18,15 @@ DOTFILES_ROOT="$SCRIPT_DIR/../.."
 DOTFILES_DATA="$DOTFILES_ROOT/assets"
 DOTFILES_CONFIG="$DOTFILES_ROOT/config"
 
-# install packages
+#--------------------------------------------------
+# install pkg packages
+#--------------------------------------------------
+
 cat "$DOTFILES_DATA/txt/pkg-packages.txt" | xargs pkg i -y
+
+#--------------------------------------------------
+# deploy config files
+#--------------------------------------------------
 
 # zsh
 chsh -s zsh
@@ -37,6 +48,10 @@ cp -r "$DOTFILES_CONFIG"/starship "$HOME/.config/"
 mkdir -p "$CONFIG_HOME/lazygit/"
 cp -r "$DOTFILES_CONFIG"/lazygit/* "$CONFIG_HOME/lazygit/"
 
+#--------------------------------------------------
+# install from github
+#--------------------------------------------------
+
 # install lazyvim
 if [ ! -f ~/.config/nvim/lazy-lock.json ]; then
   "$DOTFILES_ROOT"/install.sh lazyvim
@@ -52,11 +67,19 @@ fi
 # font
 "$DOTFILES_ROOT"/install.sh hackgen
 
+#--------------------------------------------------
+# .termux settings
+#--------------------------------------------------
+
 # keyborad
 cp "$DOTFILES_ROOT"/config/termux/termux.properties ~/.termux/
 
 # term color
 cp "$DOTFILES_ROOT"/config/termux/colors.properties ~/.termux/
+
+#--------------------------------------------------
+# post-process
+#--------------------------------------------------
 
 echo 'done.'
 echo '*** Please restart Termux to apply all changes ***'
