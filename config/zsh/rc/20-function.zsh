@@ -16,3 +16,6 @@ function confirm {
   echo -n "$1 [y/N]: "; read -q; return $?
 }
 
+help() {
+    "$@" --help 2>&1 | bathelp
+}

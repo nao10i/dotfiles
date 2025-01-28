@@ -250,6 +250,7 @@ alias rguu='rg -uu'
 # bat
 ! command -v bat > /dev/null && alias bat='batcat'
 alias b='bat'
+alias bathelp='bat --plain --language=help'
 
 # combination
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p | xargs -o nvim'
