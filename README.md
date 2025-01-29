@@ -11,7 +11,7 @@
 
 ## 😸 Welcome
 
-Welcome to my dotfiles. This repository helps easily set up a visually stunning and colorful terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments. Grateful that you found this project and took a look!
+Welcome to my dotfiles. This repository helps easily set up a fast and intuitive terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments. Grateful that you found this project and took a look!
 
 | Linux Terminal |
 | :-: |
