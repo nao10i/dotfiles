@@ -181,7 +181,7 @@ Based on [LazyVim keymaps](https://www.lazyvim.org/keymaps), with some additiona
 | i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | undo                                                                    |
 | i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | redo                                                                    |
 
-Emacs-like shortcuts are configured in insert mode. For more information, please click [here](docs/neovim.md).
+Emacs-like shortcuts are configured in insert mode. For more information, please click [here](docs/neovim.md#emacs-like).
 
 - <kbd>Ctrl</kbd>+<kbd>[abdefnpuwy]</kbd>
 - <kbd>Alt</kbd>+<kbd>[bdf]</kbd>
