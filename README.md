@@ -4,7 +4,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2377aaff)
 [![Tokei total line](https://tokei.rs/b1/github/nao10i/dotfiles?category=lines&style=for-the-badge&logo=https://simpleicons.org/icons/github.svg&color=%2377aaff)](https://github.com/nao10i/dotfiles)
 
-<!--![GitHub Created At](https://img.shields.io/github/created-at/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)-->
 ![GitHub License](https://img.shields.io/github/license/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nao10i/dotfiles?style=for-the-badge&logo=github&color=%23ffdd33)
@@ -13,17 +12,17 @@
 
 Welcome to my dotfiles. This repository helps easily set up a fast and intuitive terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments. Grateful that you found this project and took a look!
 
-| Linux Terminal |
-| :-: |
-| <img src="https://github.com/user-attachments/assets/3be7c42f-ee48-4714-a4a5-d5bd0aa7045f" width="800"> |
+### Linux Terminal
 
-| Termux |
-| :-: |
-| <img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320"> |
+<img src="https://github.com/user-attachments/assets/3be7c42f-ee48-4714-a4a5-d5bd0aa7045f" width="800">
 
-| WSL2 |
-| :-: |
-| <img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime"> |
+### Android Termux
+
+<img src="https://github.com/user-attachments/assets/4e6723db-ed9a-4d47-bac6-32cea19f0b15" width="320">
+
+### WSL2
+
+<img src="https://github.com/user-attachments/assets/cd66472f-fe90-46bd-a2f8-464e57fcf7a8" width="800" alt="wsl_zsh_nvim_startuptime">
 
 ## 🚀 Installation
 
@@ -177,8 +176,8 @@ Based on [LazyVim keymaps](https://www.lazyvim.org/keymaps), with some additiona
 | ----- | ------------------------------------------- | ----------------------------------------------------------------------- |
 | n,v   | <kbd>Ctrl</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | move to (the end of the previous / the beginning of the next) paragraph |
 | n,v,i | <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | backward word / forward word                                            |
-| i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | Undo                                                                    |
-| i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | Redo                                                                    |
+| i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | undo                                                                    |
+| i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | redo                                                                    |
 
 Emacs-like shortcuts are configured in insert mode. For more information, please click [here](docs/neovim.md).
 
