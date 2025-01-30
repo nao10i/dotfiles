@@ -2,14 +2,18 @@
 
 ## Keymaps
 
+### Base
+
 Based on [LazyVim keymaps](https://www.lazyvim.org/keymaps), with some additional key bindings added.
 
 | Mode  | Key                                         | Description                                                             |
 | ----- | ------------------------------------------- | ----------------------------------------------------------------------- |
-| n,v   | <kbd>Ctrl</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | move to (the end of the previous / the beginning of the next) paragraph |
-| n,v,i | <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | backward word / forward word                                            |
+| n,v   | <kbd>Ctrl</kbd>+(<kbd>↑</kbd>/<kbd>↓</kbd>) | Move to (the end of the previous / the beginning of the next) paragraph |
+| n,v,i | <kbd>Ctrl</kbd>+(<kbd>←</kbd>/<kbd>→</kbd>) | Backward word / Forward word                                            |
 | i     | <kbd>Ctrl</kbd>+<kbd>/</kbd>                | Undo                                                                    |
 | i     | <kbd>Ctrl</kbd>+<kbd>r</kbd>                | Redo                                                                    |
+
+### Emacs-like
 
 Emacs-like shortcuts are configured in insert mode.
 
@@ -17,22 +21,22 @@ Emacs-like shortcuts are configured in insert mode.
 
 | Mode  | Key                 | Description                                                             |
 | ----- | ------------------- | ----------------------------------------------------------------------- |
-| i     | <kbd>Ctrl</kbd>+a   | Move the cursor to the beginning of the line.                           |
-| i     | <kbd>Ctrl</kbd>+e   | Move the cursor to the end of the line.                                 |
-| i     | <kbd>Ctrl</kbd>+d   | Delete the character under the cursor.                                  |
-| i     | <kbd>Ctrl</kbd>+h   | Delete the character before the cursor (backspace).                     |
-| i     | <kbd>Ctrl</kbd>+b   | Move the cursor one character backward.                                 |
-| i     | <kbd>Ctrl</kbd>+f   | Move the cursor one character forward.                                  |
-| i     | <kbd>Ctrl</kbd>+p   | Move the cursor to the previous line.                                   |
-| i     | <kbd>Ctrl</kbd>+n   | Move the cursor to the next line.                                       |
-| i     | <kbd>Ctrl</kbd>+u   | Delete all characters before the cursor on the current line.            |
-| i     | <kbd>Ctrl</kbd>+w   | Delete the word before the cursor.                                      |
-| i     | <kbd>Ctrl</kbd>+y   | Paste (yank) the most recently deleted text at the cursor position.     |
+| i     | <kbd>Ctrl</kbd>+<kbd>a</kbd>   | Move the cursor to the beginning of the line.                           |
+| i     | <kbd>Ctrl</kbd>+<kbd>e</kbd>   | Move the cursor to the end of the line.                                 |
+| i     | <kbd>Ctrl</kbd>+<kbd>d</kbd>   | Delete the character under the cursor.                                  |
+| i     | <kbd>Ctrl</kbd>+<kbd>h</kbd>   | Delete the character before the cursor (backspace).                     |
+| i     | <kbd>Ctrl</kbd>+<kbd>b</kbd>   | Move the cursor one character backward.                                 |
+| i     | <kbd>Ctrl</kbd>+<kbd>f</kbd>   | Move the cursor one character forward.                                  |
+| i     | <kbd>Ctrl</kbd>+<kbd>p</kbd>   | Move the cursor to the previous line.                                   |
+| i     | <kbd>Ctrl</kbd>+<kbd>n</kbd>   | Move the cursor to the next line.                                       |
+| i     | <kbd>Ctrl</kbd>+<kbd>u</kbd>   | Delete all characters before the cursor on the current line.            |
+| i     | <kbd>Ctrl</kbd>+<kbd>w</kbd>   | Delete the word before the cursor.                                      |
+| i     | <kbd>Ctrl</kbd>+<kbd>y</kbd>   | Paste (yank) the most recently deleted text at the cursor position.     |
 
 - <kbd>Alt</kbd>+<kbd>[bdf]</kbd>
 
 | Mode | Key               | Description   |
 | ---- | ----------------- | ------------- |
-| i    | <kbd>Alt</kbd>+d  | delete word   |
-| i    | <kbd>Alt</kbd>+b  | backward word |
-| i    | <kbd>Alt</kbd>+f  | forward word  |
+| i    | <kbd>Alt</kbd>+<kbd>d</kbd>  | Delete word   |
+| i    | <kbd>Alt</kbd>+<kbd>b</kbd>  | Backward word |
+| i    | <kbd>Alt</kbd>+<kbd>f</kbd>  | Forward word  |
