@@ -8,10 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nao10i/dotfiles?style=for-the-badge&logo=github&color=%23ffdd33)
 
-<p align="center">
-  [<a href="../">English</a>]
-  [日本語]
-</p>
+言語: [[English](../)] [日本語]
 
 ## 😸 ようこそ
 
