@@ -8,9 +8,14 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nao10i/dotfiles?style=for-the-badge&logo=github&color=%23ffdd33)
 
+<p align="center">
+  [English]
+  [<a href="docs/README-ja.md">日本語</a>]
+</p>
+
 ## 😸 Welcome
 
-Welcome to my dotfiles. This repository helps easily set up a fast and intuitive terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Designed for use in mainly English or [Japanese](docs/README-ja.md) environments. Grateful that you found this project and took a look!
+Welcome to my dotfiles. This repository helps easily set up a fast and intuitive terminal environment. This setup installs Zsh with starship prompt, tmux, Neovim, and Golang and Rust-based command-line tools that starts and operates quickly. Grateful that you found this project and took a look!
 
 ### Linux Terminal
 

@@ -4,14 +4,18 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2377aaff)
 [![Tokei total line](https://tokei.rs/b1/github/nao10i/dotfiles?category=lines&style=for-the-badge&logo=https://simpleicons.org/icons/github.svg&color=%2377aaff)](https://github.com/nao10i/dotfiles)
 
-<!--![GitHub Created At](https://img.shields.io/github/created-at/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)-->
 ![GitHub License](https://img.shields.io/github/license/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nao10i/dotfiles?style=for-the-badge&logo=github&color=%2355ff99)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nao10i/dotfiles?style=for-the-badge&logo=github&color=%23ffdd33)
 
+<p align="center">
+  [<a href="../">English</a>]
+  [日本語]
+</p>
+
 ## 😸 ようこそ
 
-わたしの Dotfiles へようこそ．数多くのプロジェクトの中から見つけてくれてありがとうございます！このリポジトリを利用することで、直感的なターミナル環境を簡単に構築できます．高速に起動・動作する Golang と Rust 製のコマンドラインツールを中心に採用しています．主に[英語](../)または日本語環境で使うことを想定して作成しています．
+わたしの Dotfiles へようこそ．数多くのプロジェクトの中から見つけてくれてありがとうございます！このリポジトリを利用することで、直感的なターミナル環境を簡単に構築できます．高速に起動・動作する Golang と Rust 製のコマンドラインツールを中心に構成しています．
 
 ### Linux
 
